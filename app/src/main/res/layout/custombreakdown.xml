@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/WelcomeTitleC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Custom Breakdown"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/BillView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is the total bill? (RM)"
+                android:textSize="15sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/totalBill3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/PersonView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total person?"
+                android:textSize="15sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/totalPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/confirmationBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:layout_marginBottom="24dp"
+                android:textColor="#FFFFFF"
+                android:background="#1976D2" />
+
+            <TextView
+                android:id="@+id/customView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15sp"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/totalCustom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint=""
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/customBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate"
+                android:visibility="gone"
+                android:layout_marginBottom="24dp"
+                android:textColor="#FFFFFF"
+                android:background="#1976D2" />
+
+            <TextView
+                android:id="@+id/customBreakdownResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/emailBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Send to Email"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="#1976D2"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

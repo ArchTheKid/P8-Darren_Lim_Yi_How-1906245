@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/WelcomeTitleP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Equal Breakdown"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                />
+
+            <TextView
+                android:id="@+id/BillView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is the Total Bill? (RM)"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                />
+
+            <EditText
+                android:id="@+id/totalBill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp"
+                />
+
+            <TextView
+                android:id="@+id/PersonView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total people involved in this meal: "
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                />
+
+            <EditText
+                android:id="@+id/totalPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp"
+                />
+
+            <Button
+                android:id="@+id/equalBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp"
+                android:textColor="#FFFFFF"
+                android:background="#1976D2"
+                />
+
+            <TextView
+                android:id="@+id/equalBreakdownResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp"
+                />
+
+            <Button
+                android:id="@+id/emailBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Send to Email"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="#1976D2"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
